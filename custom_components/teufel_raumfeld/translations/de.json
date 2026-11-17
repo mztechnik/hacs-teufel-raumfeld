@@ -1,0 +1,61 @@
+{
+  "config": {
+    "flow_title": "{name}",
+    "step": {
+      "user": {
+        "title": "Teufel Raumfeld einrichten",
+        "description": "IP-Adresse des Raumfeld-Hosts eingeben. Bei einer einzelnen Box (z. B. Teufel One S) ist das die Box selbst.",
+        "data": {
+          "host": "IP-Adresse oder Hostname"
+        }
+      },
+      "confirm": {
+        "title": "Teufel Raumfeld gefunden",
+        "description": "Soll „{name}“ ({host}) zu Home Assistant hinzugefügt werden?"
+      }
+    },
+    "error": {
+      "cannot_connect": "Verbindung fehlgeschlagen. Ist die Box eingeschaltet und die Adresse richtig?",
+      "not_raumfeld": "Unter dieser Adresse antwortet kein Raumfeld-Host."
+    },
+    "abort": {
+      "already_configured": "Dieses Raumfeld-System ist bereits eingerichtet.",
+      "cannot_connect": "Verbindung fehlgeschlagen."
+    }
+  },
+  "entity": {
+    "number": {
+      "bass": { "name": "Bass" },
+      "mid": { "name": "Mitten" },
+      "treble": { "name": "Höhen" },
+      "sleep_timer": { "name": "Sleep-Timer" }
+    },
+    "button": {
+      "sound_success": { "name": "Hinweiston Erfolg" },
+      "sound_failure": { "name": "Hinweiston Fehler" }
+    },
+    "sensor": {
+      "wifi_signal": { "name": "WLAN-Signal" }
+    },
+    "update": {
+      "firmware": { "name": "Firmware" }
+    }
+  },
+  "exceptions": {
+    "command_failed": {
+      "message": "Befehl an die Teufel-Box fehlgeschlagen: {error}"
+    },
+    "not_available": {
+      "message": "Der Lautsprecher ist gerade nicht erreichbar."
+    },
+    "unknown_source": {
+      "message": "Die Quelle „{source}“ gibt es nicht (mehr)."
+    },
+    "not_groupable": {
+      "message": "{entity} ist kein Raumfeld-Lautsprecher und kann nicht gruppiert werden."
+    },
+    "no_zone": {
+      "message": "Auf diesem Lautsprecher läuft gerade nichts. Bitte zuerst ein Medium abspielen."
+    }
+  }
+}

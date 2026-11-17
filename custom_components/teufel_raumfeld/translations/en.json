@@ -1,0 +1,61 @@
+{
+  "config": {
+    "flow_title": "{name}",
+    "step": {
+      "user": {
+        "title": "Set up Teufel Raumfeld",
+        "description": "Enter the IP address of the Raumfeld host. With a single speaker (e.g. Teufel One S) this is the speaker itself.",
+        "data": {
+          "host": "IP address or hostname"
+        }
+      },
+      "confirm": {
+        "title": "Teufel Raumfeld discovered",
+        "description": "Do you want to add \"{name}\" ({host}) to Home Assistant?"
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect. Is the speaker powered on and the address correct?",
+      "not_raumfeld": "No Raumfeld host is answering at this address."
+    },
+    "abort": {
+      "already_configured": "This Raumfeld system is already configured.",
+      "cannot_connect": "Failed to connect."
+    }
+  },
+  "entity": {
+    "number": {
+      "bass": { "name": "Bass" },
+      "mid": { "name": "Mid" },
+      "treble": { "name": "Treble" },
+      "sleep_timer": { "name": "Sleep timer" }
+    },
+    "button": {
+      "sound_success": { "name": "Success sound" },
+      "sound_failure": { "name": "Failure sound" }
+    },
+    "sensor": {
+      "wifi_signal": { "name": "Wi-Fi signal" }
+    },
+    "update": {
+      "firmware": { "name": "Firmware" }
+    }
+  },
+  "exceptions": {
+    "command_failed": {
+      "message": "Command to the Teufel speaker failed: {error}"
+    },
+    "not_available": {
+      "message": "The speaker is currently not reachable."
+    },
+    "unknown_source": {
+      "message": "Source \"{source}\" does not exist (anymore)."
+    },
+    "not_groupable": {
+      "message": "{entity} is not a Raumfeld speaker and cannot be grouped."
+    },
+    "no_zone": {
+      "message": "Nothing is playing on this speaker. Please play some media first."
+    }
+  }
+}
