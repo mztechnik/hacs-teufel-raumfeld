@@ -98,6 +98,16 @@ Voraussetzung: Home Assistant (min. Version 2025.3) und die Box liegen im selben
   Standby, geht sie danach wieder in den Standby.
 - **Nicht unterstützt** von der One S: Balance und Stereo-Verbreiterung.
 
+## Entwicklung & Haftungsausschluss
+
+- Diese Custom Integration wurde komplett durch KI erstellt (Claude Code).
+- Getestet wurde sie mit einer einzelnen Teufel One S; die Gruppierung mehrerer
+  Lautsprecher (Multiroom) ist ungetestet.
+- Nutzung auf eigene Gefahr: Es besteht **keine Haftung** für Schäden oder Datenverluste.
+- Das Projekt befindet sich aktuell noch in Entwicklung, daher können jederzeit Fehler auftreten.
+- Die Entwicklung ist **inoffiziell** und steht in **keinem Zusammenhang** mit der
+  Lautsprecher Teufel GmbH. „Teufel" und „Raumfeld" sind Marken ihrer jeweiligen Inhaber.
+
 ## Fehlersuche
 
 ```yaml
